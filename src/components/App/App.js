@@ -20,6 +20,15 @@ const App = () => {
 
 const Main = styled.main`
   padding: 64px 32px;
+
+  @media ${QUERIES.tabletAndDown} {
+    padding: 48px 32px;
+  }
+
+  @media ${QUERIES.phoneAndDown} {
+    padding: 48px 16px;
+  }
+
   /*
   @media ${(p) => p.theme.queries.laptopAndDown} {
     background-color: green;
